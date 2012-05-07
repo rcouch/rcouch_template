@@ -31,3 +31,4 @@
 {chmod, 8#744, "rel/files/nodetool"}.
 {file, "rcouch.rel/files/app.config", "rel/files/app.config"}.
 {template, "rcouch.rel/files/vm.args", "rel/files/vm.args"}.
+{file, "rcouch.rel/files/refuge_logo.png", "rel/files/refuge_logo.png"}.
