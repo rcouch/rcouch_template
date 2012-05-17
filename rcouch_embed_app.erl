@@ -10,7 +10,20 @@
 %% ===================================================================
 
 start(_StartType, _StartArgs) ->
+    {ok, Deps} = application:get_key({{appid}}, applications),
+    true = lists:all(fun ensure_started/1, Deps),
     {{appid}}_sup:start_link().
 
 stop(_State) ->
     ok.
+
+ensure_started(App) ->
+    case application:start(App) of
+        ok ->
+            true;
+        {error, {already_started, App}} ->
+            true;
+        Else ->
+            error_logger:error_msg("Couldn't start ~p: ~p", [App, Else]),
+            Else
+    end.
