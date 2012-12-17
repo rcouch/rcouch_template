@@ -20,10 +20,12 @@
 {chmod, 8#744, "rel/files/{{appid}}"}.
 {file, "rcouch.rel/files/erl", "rel/files/erl"}.
 {chmod, 8#744, "rel/files/erl"}.
-{file, "rcouch.rel/files/default.ini", "rel/files/default.ini"}.
+{file, "rcouch.rel/files/couch.ini", "rel/files/couch.ini"}.
+{file, "rcouch.rel/files/couch_httpd.ini", "rel/files/couch_httpd.ini"}.
 {file, "rcouch.rel/files/local.ini", "rel/files/local.ini"}.
 {file, "rcouch.rel/files/nodetool", "rel/files/nodetool"}.
 {chmod, 8#744, "rel/files/nodetool"}.
 {file, "rcouch.rel/files/app.config", "rel/files/app.config"}.
 {template, "rcouch.rel/files/vm.args", "rel/files/vm.args"}.
 {file, "rcouch.rel/files/refuge_logo.png", "rel/files/refuge_logo.png"}.
+{file, "rcouch.rel/files/install_upgrade.escript", "rel/files/install_upgrade.escript"}.

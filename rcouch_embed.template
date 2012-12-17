@@ -25,8 +25,8 @@
 {chmod, 8#744, "rel/files/{{appid}}"}.
 {file, "rcouch.rel/files/erl", "rel/files/erl"}.
 {chmod, 8#744, "rel/files/erl"}.
-{file, "rcouch.rel/files/default.ini", "rel/files/couch.ini"}.
-{file, "rcouch.rel/files/default.ini", "rel/files/couch_httpd.ini"}.
+{file, "rcouch.rel/files/couch.ini", "rel/files/couch.ini"}.
+{file, "rcouch.rel/files/couch_httpd.ini", "rel/files/couch_httpd.ini"}.
 {file, "rcouch.rel/files/local.ini", "rel/files/local.ini"}.
 {file, "rcouch.rel/files/nodetool", "rel/files/nodetool"}.
 {chmod, 8#744, "rel/files/nodetool"}.
